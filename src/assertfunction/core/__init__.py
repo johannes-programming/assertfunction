@@ -6,7 +6,7 @@ __all__ = ["assertfunction"]
 
 
 @overloadable
-def assertfunction(*args) -> int:
+def assertfunction(*args: Any) -> int:
     "This function works as dispatcher."
     if len(args) < 1:
         raise TypeError("An assertion takes at least 1 positional argument (0 given).")
