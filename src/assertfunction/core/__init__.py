@@ -9,7 +9,9 @@ __all__ = ["assertfunction"]
 def assertfunction(*args: Any) -> int:
     "This function works as dispatcher."
     if len(args) < 1:
-        raise TypeError("An assertion takes at least 1 positional argument (0 given).")
+        raise TypeError(
+            "An assertion requires at least 1 positional argument (0 given)."
+        )
     if len(args) > 2:
         raise TypeError(
             "An assertion takes at most 2 positional arguments (%s given)." % len(args)
