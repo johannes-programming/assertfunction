@@ -27,7 +27,7 @@ keywords = []
 name = "assertfunction"
 readme = "README.rst"
 requires-python = ">=3.8"
-version = "1.0.3+local.1"
+version = "1.0.3+local.2"
 
 [project.license]
 file = "LICENSE.txt"
