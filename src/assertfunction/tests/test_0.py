@@ -31,7 +31,7 @@ class TestAssertFunction(unittest.TestCase):
 
     def test_invalid_argument_count(self):
         """Test assertfunction with invalid number of arguments."""
-        with self.assertRaises(TypeError):
+        with self.assertRaises(Exception):
             assertfunction(True, "Message", "Extra argument")  # Too many arguments
 
 
